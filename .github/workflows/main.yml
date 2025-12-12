@@ -16,7 +16,7 @@ jobs:
 
     steps:
       - name: Print message
-        run: echo "Triggered by comment: ${{ github.event.comment.body }}"
+        run: echo "Triggered by comment"
 
   on-pr-created:
     if: github.event_name == 'pull_request' && github.event.action == 'opened'
